@@ -3235,6 +3235,22 @@ Source: VISHAY wscwsn.pdf</description>
 <pad name="3" x="1.27" y="0" drill="1.016" rot="R90"/>
 <pad name="4" x="3.81" y="0" drill="1.016" rot="R90"/>
 </package>
+<package name="KXN_PORT_1X7">
+<wire x1="10.01" y1="-2.3575" x2="10.01" y2="3.3925" width="0.254" layer="21"/>
+<wire x1="10.01" y1="3.3925" x2="-10.01" y2="3.3925" width="0.254" layer="21"/>
+<wire x1="-10.01" y1="3.3925" x2="-10.01" y2="-2.3575" width="0.254" layer="21"/>
+<wire x1="-10.01" y1="-2.3575" x2="10.01" y2="-2.3575" width="0.254" layer="21"/>
+<wire x1="-7.61" y1="-2.3" x2="-7.61" y2="-1.8" width="0.254" layer="21"/>
+<wire x1="7.71" y1="-2.3" x2="7.71" y2="-1.8" width="0.254" layer="21"/>
+<pad name="1" x="-7.62" y="0" drill="1.016" rot="R90"/>
+<pad name="2" x="-5.08" y="0" drill="1.016" rot="R90"/>
+<pad name="3" x="-2.54" y="0" drill="1.016" rot="R90"/>
+<pad name="4" x="0" y="0" drill="1.016" rot="R90"/>
+<text x="-9.2775" y="-1.4875" size="1.016" layer="51" ratio="10">1</text>
+<pad name="5" x="2.54" y="0" drill="1.016" rot="R90"/>
+<pad name="6" x="5.08" y="0" drill="1.016" rot="R90"/>
+<pad name="7" x="7.62" y="0" drill="1.016" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MAKER_SPACE_HNAOAB_BUTTON_4*4*1.5">
@@ -3456,6 +3472,48 @@ Source: VISHAY wscwsn.pdf</description>
 <text x="-3.175" y="1.905" size="1.27" layer="94">SDA</text>
 <text x="-3.175" y="4.445" size="1.27" layer="94">SCL</text>
 <text x="-3.81" y="8.255" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="KXN_SENSOR_4IR_1X6">
+<wire x1="2.54" y1="-12.7" x2="2.54" y2="10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="2.54" y2="-12.7" width="0.254" layer="94"/>
+<pin name="P$1" x="7.62" y="-5.08" visible="off" length="middle" rot="R180"/>
+<pin name="P$2" x="7.62" y="-2.54" visible="off" length="middle" rot="R180"/>
+<pin name="P$3" x="7.62" y="0" visible="off" length="middle" rot="R180"/>
+<pin name="P$4" x="7.62" y="2.54" visible="off" length="middle" rot="R180"/>
+<text x="-3.175" y="-5.715" size="1.27" layer="94">GND</text>
+<text x="-3.175" y="-3.175" size="1.27" layer="94">VCC</text>
+<text x="-3.175" y="-0.635" size="1.27" layer="94">Sig_1</text>
+<text x="-3.175" y="1.905" size="1.27" layer="94">Sig_2</text>
+<text x="-8.89" y="10.795" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.175" y="4.445" size="1.27" layer="94">Sig_3</text>
+<text x="-3.175" y="6.985" size="1.27" layer="94">Sig_4</text>
+<pin name="P$5" x="7.62" y="5.08" visible="off" length="middle" rot="R180"/>
+<pin name="P$6" x="7.62" y="7.62" visible="off" length="middle" rot="R180"/>
+<text x="-7.62" y="-10.16" size="1.27" layer="94">4 IR Sensor</text>
+</symbol>
+<symbol name="KXN_TB6612_PORT_1X7">
+<wire x1="5.08" y1="-15.24" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-15.24" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
+<pin name="P$1" x="10.16" y="-7.62" visible="off" length="middle" rot="R180"/>
+<pin name="P$2" x="10.16" y="-5.08" visible="off" length="middle" rot="R180"/>
+<pin name="P$3" x="10.16" y="-2.54" visible="off" length="middle" rot="R180"/>
+<pin name="P$4" x="10.16" y="0" visible="off" length="middle" rot="R180"/>
+<text x="-0.635" y="-8.255" size="1.27" layer="94">GND</text>
+<text x="-0.635" y="-5.715" size="1.27" layer="94">VCC</text>
+<text x="-0.635" y="-3.175" size="1.27" layer="94">Dir 1</text>
+<text x="-0.635" y="-0.635" size="1.27" layer="94">Pwm 1</text>
+<text x="-6.35" y="10.795" size="1.778" layer="95">&gt;NAME</text>
+<text x="-0.635" y="1.905" size="1.27" layer="94">Dir 2</text>
+<text x="-0.635" y="4.445" size="1.27" layer="94">Pwm 2</text>
+<pin name="P$5" x="10.16" y="2.54" visible="off" length="middle" rot="R180"/>
+<pin name="P$6" x="10.16" y="5.08" visible="off" length="middle" rot="R180"/>
+<text x="-5.842" y="-12.7" size="1.27" layer="94">TB6612 Port</text>
+<pin name="P$7" x="10.16" y="7.62" visible="off" length="middle" rot="R180"/>
+<text x="-0.635" y="6.985" size="1.27" layer="94">VMotor</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4945,6 +5003,74 @@ Source: http://www.osram.convergy.de/</description>
 <connect gate="G$1" pin="P$2" pad="3"/>
 <connect gate="G$1" pin="P$3" pad="2"/>
 <connect gate="G$1" pin="P$4" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KXN_SENSOR_4IR_1X6" prefix="H">
+<gates>
+<gate name="G$1" symbol="KXN_SENSOR_4IR_1X6" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="MASTER" package="KXN_PORT_1X6">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="P$3" pad="3"/>
+<connect gate="G$1" pin="P$4" pad="4"/>
+<connect gate="G$1" pin="P$5" pad="5"/>
+<connect gate="G$1" pin="P$6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SLAVE" package="KXN_PORT_1X6">
+<connects>
+<connect gate="G$1" pin="P$1" pad="6"/>
+<connect gate="G$1" pin="P$2" pad="5"/>
+<connect gate="G$1" pin="P$3" pad="4"/>
+<connect gate="G$1" pin="P$4" pad="3"/>
+<connect gate="G$1" pin="P$5" pad="2"/>
+<connect gate="G$1" pin="P$6" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KXN_TB6612_PORT_1X7" prefix="H">
+<gates>
+<gate name="G$1" symbol="KXN_TB6612_PORT_1X7" x="0" y="0"/>
+</gates>
+<devices>
+<device name="MASTER" package="KXN_PORT_1X7">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="P$3" pad="3"/>
+<connect gate="G$1" pin="P$4" pad="4"/>
+<connect gate="G$1" pin="P$5" pad="5"/>
+<connect gate="G$1" pin="P$6" pad="6"/>
+<connect gate="G$1" pin="P$7" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SLAVE" package="KXN_PORT_1X7">
+<connects>
+<connect gate="G$1" pin="P$1" pad="7"/>
+<connect gate="G$1" pin="P$2" pad="6"/>
+<connect gate="G$1" pin="P$3" pad="5"/>
+<connect gate="G$1" pin="P$4" pad="4"/>
+<connect gate="G$1" pin="P$5" pad="3"/>
+<connect gate="G$1" pin="P$6" pad="2"/>
+<connect gate="G$1" pin="P$7" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
